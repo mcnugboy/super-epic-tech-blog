@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const { UPSERT } = require('sequelize/types/query-types');
+const { User } = require('sequelize');
 const sequelize = require('../config/config');
 
 User.init(

@@ -1,6 +1,7 @@
-const User = require('./User');
-const Post = require('./Post');
-const Comment = require('./Comment');
+const User = require('./User.js');
+const Post = require('./Post.js');
+const Comment = require('./Comment.js');
+const { INITIALLY_DEFERRED } = require('sequelize/types/deferrable.js');
 
 Post.belongsTo(User, {
     foreignKey: 'userId',
